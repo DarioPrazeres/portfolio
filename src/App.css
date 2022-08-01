@@ -1,0 +1,224 @@
+body{
+  font-size: 18px;
+  text-justify: distribute;
+}
+.sec-perfil{
+  padding-top: 50px;
+  margin-top: 50px;
+}
+header{
+  margin-bottom: 5px;
+}
+.navbar-collapse, .navbar-nav{
+  width: 100px;
+}
+
+nav{
+  box-shadow: rgb(255, 255, 255) 0px 0px 1px 0px; ;
+}
+.size-btn{
+  width: 10px;
+  height: 10px;
+}
+.perfil .photo img{
+  width: 105%;
+  height: 100%;
+}
+.iam{
+  padding: 0;
+  margin: 0;
+}
+.perfil{
+  margin-top: 10px;
+  width: 99%;
+  padding: 10px;
+  margin: 2px;
+  display: grid;
+  grid-template-columns: 25% 65% ;
+  gap: 10%;
+  height: auto;
+
+  border-radius: 11px;
+}
+.about-me{
+  width: 100%;
+  padding: 5px;
+}
+.personal{
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 8px;
+  padding: 5px;
+  margin: 5px;
+}
+.part{
+  border-radius: 11px;
+  height: auto;
+  padding: 10px;
+}
+.part h5{
+  text-align: center;
+}
+.exp{
+  font-size: 13px;
+}
+.part-skill{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 115px 115px 115px;
+}
+.skil-disc{
+  text-align: center;
+  height: auto;
+  padding: 7px;
+  margin: 3px;
+}
+.skil-disc:hover{
+  box-shadow: rgb(255, 255, 255) 2px 2px 2px 2px; ;
+  border-radius: 5px;
+  transition: 2s;
+}
+.skill-img{
+  width: 50px;
+  height: 50px;
+}
+.ejs{
+  color: #D6FF00;
+}
+.all-project{
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 400px;
+}
+.project{
+  padding: 7px;
+}
+.img-project img{
+  width: 100%;
+  height: 210px;
+}
+#myCarousel{
+  height: 500px;
+}
+.dp{
+  display: none;
+}
+footer{
+  border-top: 1px solid rgb(56, 56, 56);
+  text-align: center;
+}
+.git{
+  padding: 2px;
+  margin: 1px;
+}
+@media only screen and (max-width: 1000px){
+  .all-project{
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 400px);
+  }
+  .sec-perfil{
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .pos-right{
+    left: 50%;
+    padding: 5px;
+  }
+  .personal{
+    display: flex;
+    flex-direction: column;
+  }
+  .phone{
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .skills{
+    grid-template-columns: 50% 50%;
+  }
+  .part-skill{
+    gap: 5px;
+  }
+  .all-project{
+    display: none;
+  }
+  .dp{
+    display: block;
+  }
+  .img-project {
+    width: 80%;
+  }
+  .img-project img{
+    width: 100%;
+    height: auto;
+  }
+  .project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .disc{   
+    width: 80%;
+  }
+  .sec-perfil{
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .personal{
+    flex-direction: column;
+  }
+  .phone{
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  #myCarousel{
+    height: 450px;
+  }
+  .sec-perfil{
+    padding-top: 25px;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width:500px){
+  .skills{
+    grid-template-columns: 100%;
+  }
+  #myCarousel{
+    height: 420px;
+  }
+  
+}
+@media only screen and (max-width: 500px){
+  .perfil{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .personal{
+    grid-template-columns: 90%;
+  }
+  .perfil .photo img{
+    width: 150px;
+    height: 150px;
+  }
+  .perfil .photo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+}
